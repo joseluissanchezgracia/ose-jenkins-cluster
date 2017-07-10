@@ -40,6 +40,16 @@
 				"dockerImageRepository": "registry.access.redhat.com/rhel7/rhel"
 			}
 		},
+	    	{
+		    "kind": "ImageStream",
+		    "apiVersion": "v1",
+		    "metadata": {
+		        "name": "centos7"
+		    },
+			"spec": {
+				"dockerImageRepository": "registry.hub.docker.com/openshift/jenkins-16-centos7"
+			}
+		},
 		{
 		    "kind": "ImageStream",
 		    "apiVersion": "v1",
@@ -173,7 +183,7 @@
                     "dockerStrategy": {
                         "from": {
                             "kind": "ImageStreamTag",
-                            "name": "rhel7:latest"
+                            "name": "centos7:latest"
                         }
                     }
                 },
