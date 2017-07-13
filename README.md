@@ -1,3 +1,6 @@
+http://blog.andyserver.com/2016/01/dynamic-jenkins-slave-provisioning-on-openshift/
+
+
 Jenkins Cluster for OpenShift
 ===============
 
